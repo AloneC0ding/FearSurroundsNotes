@@ -1,0 +1,13 @@
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\bin\Debug\FearSurrounds.exe.config
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\bin\Debug\FearSurrounds.exe
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\bin\Debug\FearSurrounds.pdb
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\obj\Debug\FearSurrounds.csprojAssemblyReference.cache
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\obj\Debug\FearSurrounds.Form1.resources
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\obj\Debug\FearSurrounds.csproj.GenerateResource.cache
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\obj\Debug\FearSurrounds.csproj.CoreCompileInputs.cache
+C:\Users\Alone\Desktop\FearSurroundsNote.exe.config
+C:\Users\Alone\Desktop\FearSurroundsNote.exe
+C:\Users\Alone\Desktop\FearSurroundsNote.pdb
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\obj\Debug\FearSurroundsNote.Properties.Resources.resources
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\obj\Debug\FearSurroundsNote.exe
+C:\Users\Alone\source\repos\FearSurrounds\FearSurrounds\obj\Debug\FearSurroundsNote.pdb
