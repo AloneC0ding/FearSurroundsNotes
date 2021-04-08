@@ -7,5 +7,7 @@
 - 紀錄玩家發言
 - 紀錄玩家分組
 
+![](https://cdn.discordapp.com/attachments/804071485080600616/829720310315614268/ezgif-1-f7432ac3ffea.gif)
+
 # Authors
 Discord: Alone#6905
