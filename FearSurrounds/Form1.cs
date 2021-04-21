@@ -25,7 +25,6 @@ namespace FearSurrounds
             for (int i = 0; i < 12; i++)
             {
                 CheckedListBox1.Items.Add("  號碼 " + i.ToString("00") + "    ");
-                CheckedListBox2.Items.Add("  號碼 " + i.ToString("00") + "    ");
             }
         }
 
@@ -109,17 +108,17 @@ namespace FearSurrounds
             if (Hit.Checked == true)
             {
                 TextBox1.Text += Environment.NewLine + "";
-                TextBox1.Text += string.Join(System.Environment.NewLine, "      ===== 打 =====    ");
+                TextBox1.Text += string.Join(System.Environment.NewLine, "      ===關燈之前===    ");
                 TextBox1.Text += Environment.NewLine + "";
             }
             if (Save.Checked == true)
             {
                 TextBox1.Text += Environment.NewLine + "";
-                TextBox1.Text += string.Join(System.Environment.NewLine, "      ===== 保 =====    ");
+                TextBox1.Text += string.Join(System.Environment.NewLine, "      ===關燈之後===    ");
                 TextBox1.Text += Environment.NewLine + "";
             }
 
-            TextBox1.Text += string.Join(" ", RselectedItems);
+            TextBox1.Text += string.Join(" ",RselectedItems);
             TextBox1.Text += Environment.NewLine + ""; 
             TextBox1.Text += string.Join(System.Environment.NewLine, "      ==============    ");
             TextBox1.Text += Environment.NewLine + "";
@@ -129,35 +128,24 @@ namespace FearSurrounds
                 CheckedListBox1.SetItemCheckState(i, (state ? CheckState.Checked : CheckState.Unchecked));
             for (int i = 0; i < CheckedListBox1.Items.Count; i++)
                 CheckedListBox2.SetItemCheckState(i, (state ? CheckState.Checked : CheckState.Unchecked));
+
         }
         private void Save_CheckedChanged(object sender, EventArgs e)
         {
             Hit.Checked = !Save.Checked;
-        }
+          }
         private void Hit_CheckedChanged_1(object sender, EventArgs e)
         {
             Save.Checked = !Hit.Checked;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             TextBox1.Text += Environment.NewLine + "";
-            TextBox1.Text += string.Join(System.Environment.NewLine, "      ====加一晚====    ");
+            TextBox1.Text += string.Join(System.Environment.NewLine, "      ============    ");
             TextBox1.Text += Environment.NewLine + "";
         }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            TextBox1.Text += Environment.NewLine + "";
-            TextBox1.Text += string.Join(System.Environment.NewLine, "      =====一組=====    ");
-            var LselectedItems = CheckedListBox1.CheckedItems.OfType<String>().ToList();
-            TextBox1.Text += string.Join(" ", LselectedItems);
-            TextBox1.Text += Environment.NewLine + "";
-            TextBox1.Text += string.Join(System.Environment.NewLine, "      ==============    ");
-            TextBox1.Text += Environment.NewLine + "";
 
-            bool state = false;
-            for (int i = 0; i < CheckedListBox1.Items.Count; i++)
-                CheckedListBox1.SetItemCheckState(i, (state ? CheckState.Checked : CheckState.Unchecked));
-        }
     }
 }
