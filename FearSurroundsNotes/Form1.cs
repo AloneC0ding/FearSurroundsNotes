@@ -50,7 +50,41 @@ namespace FearSurroundsNotes
 
 		private void Form1_Load(object sender, EventArgs e)
         {
-			fillFLP(FLP1, 120);
+			fillFLP(FLP1, 100);
+
+			Num0.Parent = pictureBox1;
+			Num0.BackColor = Color.Transparent;
+			Num1.Parent = pictureBox1;
+			Num1.BackColor = Color.Transparent;
+			Num2.Parent = pictureBox1;
+			Num2.BackColor = Color.Transparent;
+			Num3.Parent = pictureBox1;
+			Num3.BackColor = Color.Transparent;
+			Num4.Parent = pictureBox1;
+			Num4.BackColor = Color.Transparent;
+			Num5.Parent = pictureBox1;
+			Num5.BackColor = Color.Transparent;
+			Num6.Parent = pictureBox1;
+			Num6.BackColor = Color.Transparent;
+			Num7.Parent = pictureBox1;
+			Num7.BackColor = Color.Transparent;
+			Num8.Parent = pictureBox1;
+			Num8.BackColor = Color.Transparent;
+			Num9.Parent = pictureBox1;
+			Num9.BackColor = Color.Transparent;
+			Num10.Parent = pictureBox1;
+			Num10.BackColor = Color.Transparent;
+			Num11.Parent = pictureBox1;
+			Num11.BackColor = Color.Transparent;
+			Body1.Parent = pictureBox1;
+			Body1.BackColor = Color.Transparent;
+			Body2.Parent = pictureBox1;
+			Body2.BackColor = Color.Transparent;
+			Body3.Parent = pictureBox1;
+			Body3.BackColor = Color.Transparent;
+			Body4.Parent = pictureBox1;
+			Body4.BackColor = Color.Transparent;
+
 		}
 		void fillFLP(FlowLayoutPanel FLP, int cc)
 		{
@@ -58,7 +92,7 @@ namespace FearSurroundsNotes
 			{
 				Label l = new Label();
 				l.AutoSize = false;
-				l.Text = "  號碼  " + i.ToString("00");
+				l.Text = "  " + i.ToString("00") + "  " ;
 				l.BackColor = Color.FromArgb(255, cc * 2 - i, 255 - 5 * i, cc + 5 * i);
 				FLP.Controls.Add(l);
 				l.MouseDown += l_MouseDown;
@@ -120,7 +154,7 @@ namespace FearSurroundsNotes
         private void button2_Click(object sender, EventArgs e)
         {
 			TextBox1.Text += Environment.NewLine + "";
-			TextBox1.Text += string.Join(System.Environment.NewLine, "   ==========   ");
+			TextBox1.Text += string.Join(System.Environment.NewLine, " ========================= ");
 			TextBox1.Text += Environment.NewLine + "";
 		}
 
@@ -137,7 +171,6 @@ namespace FearSurroundsNotes
 		private void button13_Click(object sender, EventArgs e)
 		{
 			TextBox1.Text += button13.Text;
-			TextBox1.Text += Environment.NewLine + "";
 		}
 
         private void button3_Click(object sender, EventArgs e)
@@ -192,14 +225,13 @@ namespace FearSurroundsNotes
 
         private void button14_Click(object sender, EventArgs e)
         {
-			TextBox1.Text += Environment.NewLine + "";
 			TextBox1.Text += button14.Text;
 
 		}
 
         private void button15_Click(object sender, EventArgs e)
         {
-			TextBox1.Text += Environment.NewLine + "";
+			//TextBox1.Text += Environment.NewLine + "";
 			TextBox1.Text += button15.Text;
 		}
     }
