@@ -46,9 +46,8 @@ namespace FearSurrounds
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.Save = new System.Windows.Forms.CheckBox();
-            this.Hit = new System.Windows.Forms.CheckBox();
             this.TextBox1 = new System.Windows.Forms.RichTextBox();
+            this.CheckedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -156,29 +155,27 @@ namespace FearSurrounds
             // CheckedListBox2
             // 
             this.CheckedListBox2.CheckOnClick = true;
-            this.CheckedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckedListBox2.FormattingEnabled = true;
             this.CheckedListBox2.Items.AddRange(new object[] {
             "  ==二樓==",
             "  住院室",
             "  注射室",
             "  廁所",
-            "  2-1左樓梯",
-            "  2-1右樓梯",
+            "   門診部",
             "  ==一樓==",
             "  手術室",
-            "  門診部",
             "  門診分部",
-            "  廁所",
             "  扮工室",
-            "  1-0左樓梯",
-            "  1-0右樓梯",
             "  =地下室=",
             "  電子控制室",
-            "  太平間"});
+            "  太平間",
+            " ======",
+            " 左樓梯",
+            " 右樓梯"});
             this.CheckedListBox2.Location = new System.Drawing.Point(250, 19);
             this.CheckedListBox2.Name = "CheckedListBox2";
-            this.CheckedListBox2.Size = new System.Drawing.Size(100, 259);
+            this.CheckedListBox2.Size = new System.Drawing.Size(114, 259);
             this.CheckedListBox2.TabIndex = 14;
             // 
             // CheckedListBox1
@@ -213,34 +210,12 @@ namespace FearSurrounds
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.Save);
-            this.groupBox7.Controls.Add(this.Hit);
-            this.groupBox7.Location = new System.Drawing.Point(130, 75);
+            this.groupBox7.Controls.Add(this.CheckedListBox3);
+            this.groupBox7.Location = new System.Drawing.Point(130, 47);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(114, 64);
+            this.groupBox7.Size = new System.Drawing.Size(114, 92);
             this.groupBox7.TabIndex = 5;
             this.groupBox7.TabStop = false;
-            // 
-            // Save
-            // 
-            this.Save.AutoSize = true;
-            this.Save.Location = new System.Drawing.Point(6, 40);
-            this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(98, 17);
-            this.Save.TabIndex = 12;
-            this.Save.Text = "    關燈之後在";
-            this.Save.UseVisualStyleBackColor = true;
-            this.Save.CheckedChanged += new System.EventHandler(this.Save_CheckedChanged);
-            // 
-            // Hit
-            // 
-            this.Hit.AutoSize = true;
-            this.Hit.Location = new System.Drawing.Point(6, 17);
-            this.Hit.Name = "Hit";
-            this.Hit.Size = new System.Drawing.Size(98, 17);
-            this.Hit.TabIndex = 11;
-            this.Hit.Text = "    關燈之前在";
-            this.Hit.CheckedChanged += new System.EventHandler(this.Hit_CheckedChanged_1);
             // 
             // TextBox1
             // 
@@ -250,6 +225,20 @@ namespace FearSurrounds
             this.TextBox1.Size = new System.Drawing.Size(127, 599);
             this.TextBox1.TabIndex = 9;
             this.TextBox1.Text = "";
+            // 
+            // CheckedListBox3
+            // 
+            this.CheckedListBox3.CheckOnClick = true;
+            this.CheckedListBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckedListBox3.FormattingEnabled = true;
+            this.CheckedListBox3.Items.AddRange(new object[] {
+            " 關燈之前 ",
+            " 關燈之後 ",
+            " 條友尻玩 "});
+            this.CheckedListBox3.Location = new System.Drawing.Point(8, 10);
+            this.CheckedListBox3.Name = "CheckedListBox3";
+            this.CheckedListBox3.Size = new System.Drawing.Size(100, 67);
+            this.CheckedListBox3.TabIndex = 14;
             // 
             // Form1
             // 
@@ -272,7 +261,6 @@ namespace FearSurrounds
             this.groupBox2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -291,13 +279,12 @@ namespace FearSurrounds
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.CheckBox Save;
-        private System.Windows.Forms.CheckBox Hit;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox TextBox1;
         private System.Windows.Forms.CheckedListBox CheckedListBox1;
         private System.Windows.Forms.CheckedListBox CheckedListBox2;
+        private System.Windows.Forms.CheckedListBox CheckedListBox3;
     }
 }
 

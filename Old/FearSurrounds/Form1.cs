@@ -98,54 +98,43 @@ namespace FearSurrounds
         private void button3_Click(object sender, EventArgs e)
         {
             var LselectedItems = CheckedListBox1.CheckedItems.OfType<String>().ToList();
+            var MselectedItems = CheckedListBox3.CheckedItems.OfType<String>().ToList();
             var RselectedItems = CheckedListBox2.CheckedItems.OfType<String>().ToList();
 
-            TextBox1.Text += string.Join(System.Environment.NewLine, "     ==============    ");
-            TextBox1.Text += Environment.NewLine + "";
+
+            TextBox1.Text += string.Join(System.Environment.NewLine, "      ==============    ");
 
             TextBox1.Text += string.Join(" ", LselectedItems);
-
-            if (Hit.Checked == true)
+            TextBox1.Text += Environment.NewLine + "";
+            if (MselectedItems != null);
             {
-                TextBox1.Text += Environment.NewLine + "";
-                TextBox1.Text += string.Join(System.Environment.NewLine, "      ===關燈之前===    ");
+                TextBox1.Text += string.Join(" ", MselectedItems);
                 TextBox1.Text += Environment.NewLine + "";
             }
-            if (Save.Checked == true)
+            if (RselectedItems != null);
             {
-                TextBox1.Text += Environment.NewLine + "";
-                TextBox1.Text += string.Join(System.Environment.NewLine, "      ===關燈之後===    ");
+                TextBox1.Text += string.Join(" ", RselectedItems);
                 TextBox1.Text += Environment.NewLine + "";
             }
-
-            TextBox1.Text += string.Join(" ",RselectedItems);
-            TextBox1.Text += Environment.NewLine + ""; 
             TextBox1.Text += string.Join(System.Environment.NewLine, "      ==============    ");
             TextBox1.Text += Environment.NewLine + "";
 
             bool state = false;
             for (int i = 0; i < CheckedListBox1.Items.Count; i++)
                 CheckedListBox1.SetItemCheckState(i, (state ? CheckState.Checked : CheckState.Unchecked));
-            for (int i = 0; i < CheckedListBox1.Items.Count; i++)
+            for (int i = 0; i < CheckedListBox2.Items.Count; i++)
                 CheckedListBox2.SetItemCheckState(i, (state ? CheckState.Checked : CheckState.Unchecked));
-
-        }
-        private void Save_CheckedChanged(object sender, EventArgs e)
-        {
-            Hit.Checked = !Save.Checked;
-          }
-        private void Hit_CheckedChanged_1(object sender, EventArgs e)
-        {
-            Save.Checked = !Hit.Checked;
-
-        }
+            for (int i = 0; i < CheckedListBox3.Items.Count; i++)
+                CheckedListBox3.SetItemCheckState(i, (state ? CheckState.Checked : CheckState.Unchecked));
+        } 
 
         private void button2_Click(object sender, EventArgs e)
         {
             TextBox1.Text += Environment.NewLine + "";
-            TextBox1.Text += string.Join(System.Environment.NewLine, "      ============    ");
+            TextBox1.Text += string.Join(System.Environment.NewLine, "      ==============    ");
             TextBox1.Text += Environment.NewLine + "";
         }
+
 
     }
 }
