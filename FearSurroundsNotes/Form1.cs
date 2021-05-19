@@ -31,6 +31,8 @@ namespace FearSurroundsNotes
 			Helper.ControlMover.Init(this.Num11);
 			Helper.ControlMover.Init(this.Body1);
 			Helper.ControlMover.Init(this.Body2);
+			Helper.ControlMover.Init(this.Body3);
+			Helper.ControlMover.Init(this.Body4);
 
 			// Move a panel by its toolstrip
 			//Helper.ControlMover.Init(this.toolStrip2, this.panel3, Helper.ControlMover.Direction.Any);
