@@ -6,6 +6,7 @@
 - 紀錄曾經見過的玩家
 - 紀錄玩家發言
 - 紀錄玩家分組
+- 紀錄地圖
 
 ![](https://github.com/AloneC0ding/FearSurroundsNotes/blob/main/Features.gif)
 
